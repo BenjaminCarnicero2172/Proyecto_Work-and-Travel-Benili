@@ -1,0 +1,380 @@
+/*RESET*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+/*ESTILOS HEADER*/
+li{
+    list-style: none;
+    border: 3px  groove rgb(246, 236, 255);
+    background-color: blueviolet; 
+    padding: 0.625em;
+}
+.titulo-pagina {
+    font-weight: bold;
+  
+}
+a{
+    color: antiquewhite;
+}
+header {
+   background-color: rgb(51, 95, 190);
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
+}
+
+
+nav{
+    width: 50%;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/*ESTILOS BODY*/
+.normal {
+    font-style: normal;
+}
+
+.italica{
+    font-style: italic;
+}
+
+.texto-grande{
+    font-size: 20px;
+}
+
+.azul {
+    color: rgb(0, 255, 115);
+}
+
+.articulo {
+    background-color: aqua;
+    display: inline-block;
+}
+
+.secciones-inicio{
+    background-color: blue;
+    width: 550px;
+    height: 400px;
+    margin: 20px;
+    border: 10px inset rgb(240, 91, 240);
+}
+    
+
+
+
+.imagenes-inicio{
+    width: 150px;
+    height: 150px;
+}
+.imagenes-inicio__flex{
+display: inline-flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.secciones-trabajo{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    margin: 20px;
+    border: 10px inset rgb(41, 0, 153);
+}
+.titulos-de-secciones{
+    display: inline-block;
+    color:beige
+
+}
+
+p{
+    color: blanchedalmond;
+}
+
+.imagenes-trabajo{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.secciones-estudio{
+    background-color: rgb(170, 0, 79);
+    margin: 20px;
+    border: 10px inset rgb(121, 88, 173);
+}
+.imagenes-estudio{
+    width: 350px;
+    height: 200px;
+}
+
+.seccion-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 199, 1);
+    margin: 20px;
+    border: 10px inset rgb(69, 255, 255);
+}
+
+.articulo-nosotros{
+    display: flex;
+    flex-direction: column;
+}
+.imagen-nosotros{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.tamaño-letra-parrafo{
+    font-size: 22px;
+}
+#titulo-nosotros{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+
+
+.color-de-texto{
+    color: antiquewhite;
+}
+
+.seccion-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.formulario-inscripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 92, 145);
+    color: rgb(17, 12, 12);
+    padding: 30px;
+    margin: auto;
+}
+.casilleros-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+.mapa-ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*ESTILOS FOOTER*/
+footer{
+    background-color: rgb(51, 95, 190);
+    padding: 20px;
+}
+.footer-contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+
+/*FLEXBOX*/
+.padre-flex-trabajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padre-flex-estudio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.articulo-estudio-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.articulos-trabajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid 3px rgb(232, 255, 23); */
+}
+
+/*GRID*/
+body{
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 100vh;
+}
+
+.body-grid{
+    display: grid;
+    grid-template-columns: 600px 500px;
+    grid-template-rows: 600px 500px;
+    row-gap: 10px;
+    column-gap: 50px;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+.icono-menu img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.icono-menu, #check{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .chek-button{
+        display: block;
+    }
+    .icono-menu{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+
+@media screen  and (max-width: 700px) {
+    .titulo-pagina{
+        display: none;
+    }
+}
+
+@media  screen and (max-width:766px) {
+
+.secciones-trabajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media screen and (max-width:768px) {
+.padre-flex-estudio{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.articulo-estudio-flex{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+}
+
+    .padre-flex-trabajo{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen  and (max-width: 768px) {
+
+.footer-contenido{
+     display: flex;
+    flex-direction: column;
+ }
+
+.body-grid{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: aquamarine;
+}
+
+footer p{
+   color: black;
+}
+ 
+.enlace-contacto-footer{
+    background-color: rgb(226, 43, 195);
+    padding: 10px;
+}
+}
+
+@media screen and (max-width:768px) {
+    .seccion-nosotros{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .seccion-contacto{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

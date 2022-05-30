@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo benili.jpg">
+    <title>BENILI Work and Travel</title>
+    <link rel="stylesheet" href="../css/index.css">
+    
+</head>
+<body>
+    <header class="normal">
+        <img src="../img/logo benili.jpg" alt="imagen-logo">
+        <h1 class="titulo-pagina">
+            BENILI Work and Travel
+        </h1>
+    <nav class="nav-menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="check-button">
+            <i class="icono-menu"><img src="../img/logo-menu-hamburguesa.png" alt=""></i>
+        </label>
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__link" href="../index.html">Inicio</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="./Viajes de trabajo.html">Viajes de trabajo</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="./Viajes de estudio.html">Viajes de estudio</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="./Nosotros.html">Nosotros</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link menu__link--active" href="./Contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+        <main class="seccion-contacto">
+            <section class="formulario-inscripcion" >
+                <h2>Tu información</h2>
+                <p>Completá los siguientes datos. Posteriormente recibirás un mail con toda la información necesearia para inscribirte.</p>
+            
+                <form class="casilleros-formulario" action="./index.js" method="get">
+                    <label for="nombre"></label>
+                    <input type="text" class="estilo-formulario"  name="nombre" placeholder="Ingrese su nombre" required>
+                
+                    <label for="apellido"></label>
+                    <input type="text" class="estilo-formulario"  name="apellido" placeholder="Ingrese su apellido" required>
+                
+                    <label for="edad"></label>
+                    <input type="number" class="estilo-formulario"  name="edad" placeholder="Ingrese su edad" required>
+                
+                    <label for="dni"></label>
+                    <input type="number" class="estilo-formulario"  name="dni" placeholder="Ingrese su dni" required>
+            
+                    <label for="telefono"></label>
+                    <input type="number" class="estilo-formulario"  name="telefono" placeholder="Ingrese su teléfono" required>
+                
+                    <label for="email"></label>
+                    <input type="email" class="estilo-formulario"  name="email" placeholder="Ingrese su email" required>
+                
+                    <input type="reset" class="estilo-formulario"  value="Borrar">
+                    <p>Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
+                    <input type="submit" value="registrar">
+                    </form>
+            </section>
+            
+            <section class="mapa-ubicacion">
+                <h2>UBICACIÓN</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.316760835959!2d-57.55835438612981!3d-37.96973637972438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d961779fa835%3A0x7b60369fa71d1523!2sJuan%20Angel%20Pe%C3%B1a%204951%2C%20B7600INY%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653354200616!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+
+    
+
+    <footer style="margin-top: 100px;">
+        <nav class="italica footer-contenido">
+            <h2>Aviso de Copyright</h2>
+            <p>Contactanos para más información:</p>
+            <a class="enlace-contacto-footer" href="./Pages/Contacto.html">Contacto e inscripción</a>
+            <ul class="menu-footer">
+                <li>
+                    <a href="https://m.facebook.com/login/?locale=es_ES">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com/?lang=es">WhatsApp</a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des&lang=es">TikTok</a>
+                </li>
+            </ul>
+        </nav>
+        </footer>
+</body>
+</html>
