@@ -11,8 +11,8 @@
 /*ESTILOS HEADER*/
 li{
     list-style: none;
-    border: 3px  groove rgb(246, 236, 255);
-    background-color: blueviolet; 
+    /* border: 3px  groove rgb(246, 236, 255); */
+    /* background-color: blueviolet;  */
     padding: 0.625em;
 }
 .titulo-pagina {
@@ -20,10 +20,21 @@ li{
   
 }
 a{
+    text-decoration: none;
     color: antiquewhite;
 }
+nav ul a{
+font-size: var(--text-base);
+padding: .5rem 1rem;
+}
+
+nav ul a:hover{
+    border: 2px solid rgb(136, 255, 235);
+}
+
 header {
-   background-color: rgb(51, 95, 190);
+   /* background-color: rgb(51, 95, 190); */
+   background: linear-gradient(to right, #1e5799 0%,#a620aa 48%,#0277f4 100%);
     color: antiquewhite;
     display: flex;
     flex-direction: row;
@@ -118,7 +129,17 @@ p{
     display: flex;
     justify-content: center;
     /* padding: 20px; */
+    transition: all .3s linear;
 }
+.imagenes-trabajo:hover{
+transform: scale(1.1 1.1);
+height: 230px;
+}
+
+/* .articulos-trabajo{
+    height: 400px;
+    
+} */
 
 .secciones-estudio{
     background-color: rgb(170, 0, 79);
@@ -129,6 +150,7 @@ p{
     width: 350px;
     height: 200px;
 }
+
 
 .seccion-nosotros{
     display: flex;
@@ -297,6 +319,10 @@ body{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    li{
+        background-color: blueviolet; 
+       /* border: 3px  groove rgb(246, 236, 255); */
     }
 }
 
