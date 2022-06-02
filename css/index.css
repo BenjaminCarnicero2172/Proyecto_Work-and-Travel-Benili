@@ -4,7 +4,9 @@
     padding: 0%;
     box-sizing:border-box;
 }
-
+main{
+    max-width: 1200px;
+}
 /* html{
     font-size: 62.5%;
 } */
@@ -39,6 +41,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     height: 80px;
 }
@@ -85,22 +88,28 @@ nav{
 }
 
 .secciones-inicio{
+    display: flex;
+    align-items: center;
     background-color: blue;
-    width: 550px;
-    height: 400px;
+    /* width: 750px;
+    height: 500px; */
     margin: 20px;
     border: 10px inset rgb(240, 91, 240);
 }
     
-
+.articulos-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .imagenes-inicio{
-    width: 150px;
-    height: 150px;
+    width: 60%;
+    height: 60%;
 }
 .imagenes-inicio__flex{
-display: inline-flex;
+display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
@@ -195,19 +204,19 @@ height: 230px;
 }
 
 .formulario-inscripcion{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     background-color: rgb(0, 92, 145);
     color: rgb(17, 12, 12);
     padding: 30px;
     margin: auto;
 }
 .casilleros-formulario{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-evenly ;
-    align-items: center;
+    align-items: center; */
 }
 .mapa-ubicacion{
     display: flex;
@@ -263,14 +272,14 @@ footer{
 }
 
 /*GRID*/
-body{
+/* body{
     display: grid;
     grid-template-rows: auto;
     min-height: 100vh;
-}
+} */
 
 .body-grid{
-    display: grid;
+    display: flex;
     grid-template-columns: 600px 500px;
     grid-template-rows: 600px 500px;
     row-gap: 10px;
@@ -403,4 +412,9 @@ footer p{
         align-items: center;
     }
     
+}
+
+
+.card{
+    background-color: #0277f4;
 }

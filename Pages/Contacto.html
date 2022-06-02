@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/logo benili.jpg">
     <title>BENILI Work and Travel</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
     
 </head>
@@ -39,33 +40,33 @@
         </ul>
     </nav>
     </header>
-        <main class="seccion-contacto">
+        <main class="seccion-contacto container">
             <section class="formulario-inscripcion" >
                 <h2>Tu información</h2>
                 <p>Completá los siguientes datos. Posteriormente recibirás un mail con toda la información necesearia para inscribirte.</p>
             
-                <form class="casilleros-formulario" action="./index.js" method="get">
+                <form class="casilleros-formulario form-group" action="./index.js #" method="get">
                     <label for="nombre"></label>
-                    <input type="text" class="estilo-formulario"  name="nombre" placeholder="Ingrese su nombre" required>
+                    <input type="text" class="estilo-formulario form-control name="nombre" placeholder="Ingrese su nombre" required>
                 
                     <label for="apellido"></label>
-                    <input type="text" class="estilo-formulario"  name="apellido" placeholder="Ingrese su apellido" required>
+                    <input type="text" class="estilo-formulario form-control name="apellido" placeholder="Ingrese su apellido" required>
                 
                     <label for="edad"></label>
-                    <input type="number" class="estilo-formulario"  name="edad" placeholder="Ingrese su edad" required>
+                    <input type="number" class="estilo-formulario form-control name="edad" placeholder="Ingrese su edad" required>
                 
                     <label for="dni"></label>
-                    <input type="number" class="estilo-formulario"  name="dni" placeholder="Ingrese su dni" required>
+                    <input type="number" class="estilo-formulario form-control name="dni" placeholder="Ingrese su dni" required>
             
                     <label for="telefono"></label>
-                    <input type="number" class="estilo-formulario"  name="telefono" placeholder="Ingrese su teléfono" required>
+                    <input type="number" class="estilo-formulario form-control name="telefono" placeholder="Ingrese su teléfono" required>
                 
                     <label for="email"></label>
-                    <input type="email" class="estilo-formulario"  name="email" placeholder="Ingrese su email" required>
+                    <input type="email" class="estilo-formulario form-control"  name="email" placeholder="Ingrese su email" required>
                 
                     <input type="reset" class="estilo-formulario"  value="Borrar">
                     <p>Estoy de acuerdo con <a href="#">Términos y condiciones</a></p>
-                    <input type="submit" value="registrar">
+                    <input type="submit" class="btn btn-default"  value="REGISTRARSE">
                     </form>
             </section>
             
