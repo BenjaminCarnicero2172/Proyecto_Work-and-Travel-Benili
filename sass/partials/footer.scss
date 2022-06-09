@@ -1,0 +1,22 @@
+/*ESTILOS FOOTER*/
+footer{
+    background-color: rgb(51, 95, 190);
+    padding: 20px;
+    p{
+        color: black;
+    }
+    .menu-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 35%;
+    }
+    .footer-contenido{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+   
+}

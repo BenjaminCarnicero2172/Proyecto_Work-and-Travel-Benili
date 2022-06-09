@@ -1,0 +1,16 @@
+
+/*PARTIALS*/
+@import './partials/header.scss';
+@import './partials/footer.scss';
+
+/*VIEWS*/
+@import './views/inicio.scss';
+@import './views/Viajes-de-trabajo.scss';
+@import './views/Viajes-de-estudio.scss';
+@import './views/Nosotros.scss';
+@import './views/Contacto.scss';
+
+/*MISC*/
+@import './misc/animations.scss';
+@import './misc/media-queries.scss';
+@import './misc/normalize.scss';

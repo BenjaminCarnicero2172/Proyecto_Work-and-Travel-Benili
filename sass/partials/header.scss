@@ -1,0 +1,51 @@
+/*ESTILOS HEADER*/
+.normal {
+    font-style: normal;
+}
+
+.italica{
+    font-style: italic;
+}
+.titulos-de-secciones{
+    display: inline-block;
+    color:beige
+
+}
+li{
+    list-style: none;
+}
+.titulo-pagina {
+    font-weight: bold;
+  
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+nav{
+    width: 50%;
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    ul{
+        a{
+            font-size: var(--text-base);
+            padding: .5rem 1rem;
+            border: 2px solid rgb(136, 255, 235);
+        }
+    }
+        }    }
+
+
+header {
+   background: linear-gradient(to right, #1e5799 0%,#a620aa 48%,#0277f4 100%);
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80px;
+}
+

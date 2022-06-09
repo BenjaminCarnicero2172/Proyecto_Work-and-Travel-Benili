@@ -1,0 +1,38 @@
+/*ESTILOS VIAJES DE TRABAJO*/
+.secciones-trabajo{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    margin: 20px;
+    border: 10px inset rgb(41, 0, 153);
+    .padre-flex-trabajo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .articulos-trabajo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imagenes-trabajo{
+                width: 350px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                transition: all .3s linear;
+                .imagenes-trabajo:hover{
+                    transform: scale(1.1 1.1);
+                    height: 230px;
+                    }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
